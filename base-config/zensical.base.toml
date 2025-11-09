@@ -1,0 +1,41 @@
+# Base Zensical Configuration Template
+# Variables to be replaced per-project:
+# {{PROJECT_NAME}}, {{PROJECT_VERSION}}, {{PROJECT_URL}},
+# {{PROJECT_DESCRIPTION}}, {{PROJECT_THEME}}
+
+[project]
+site_name = "{{PROJECT_NAME}}"
+site_url = "{{PROJECT_URL}}"
+site_description = "{{PROJECT_DESCRIPTION}}"
+copyright = "Copyright © 2025"
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = true
+
+[project.theme]
+variant = "modern"
+favicon = "assets/favicon.png"
+custom_dir = "overrides"
+
+[project.theme.font]
+text = "Geist"
+code = "JetBrains Mono"
+
+[project.theme]
+features = [
+  "navigation.instant",
+  "navigation.tabs",
+  "navigation.tracking",
+  "search.suggest",
+  "search.highlight",
+]
+
+[project]
+extra_css = [
+  "stylesheets/shared.css",
+  "stylesheets/{{PROJECT_THEME}}.css",
+]
+
+extra_javascript = [
+  "javascripts/theme.js",
+]

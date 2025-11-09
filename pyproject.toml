@@ -1,0 +1,8 @@
+[project]
+name = "shared-docs-base"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+    "zensical>=0.0.5",
+]
